@@ -19,7 +19,7 @@ dependencies {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
@@ -28,5 +28,5 @@ application {
 }
 
 tasks.withType<ShadowJar> {
-    archiveFileName.set("something.jar")
+    archiveFileName.set("app.jar")
 }
